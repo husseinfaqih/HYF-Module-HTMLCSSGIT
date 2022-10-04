@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  font-family: Verdana, sans-serif;
+}
+
+.img {
+  width: 35%;
+}
+
+h1 {
+  margin: 10px;
+}
+
+h2 {
+  margin-bottom: 30px;
+  margin-top: -10px;
+  font-weight: normal;
+  font-style: oblique;
+}
+
+#info p {
+  margin: 10px;
+}
+
+.brief {
+  background-color: rgb(107, 199, 199);
+  padding: 14px;
+}
+/* FLEX */
+/* #resume {
+  display: flex;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  width: 30%;
+}
+
+#detail {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  width: 70%;
+} */
+
+.Title {
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+/* GRID */
+#resume {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+#info {
+  background-color: aqua;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+#detail {
+  height: 100vh;
+  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    'box1 box3'
+    'box2 box4'
+    '. box5';
+}
+
+#Wex {
+  background-color: yellow;
+
+  grid-area: box1;
+  padding: 10px;
+}
+#Edu {
+  background-color: lightsalmon;
+  grid-area: box2;
+
+  padding: 10px;
+}
+#Ski {
+  background-color: tomato;
+  grid-area: box3;
+
+  padding: 10px;
+}
+#Lan {
+  background-color: aqua;
+  grid-area: box4;
+
+  padding: 10px;
+}
+#Int {
+  background-color: springgreen;
+  grid-area: box5;
+
+  padding: 10px;
+}
