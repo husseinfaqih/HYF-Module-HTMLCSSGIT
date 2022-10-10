@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: #fff0e5;
+  margin: 0;
+  padding: 0;
+}
+header {
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+
+  background-color: rgb(175, 175, 230);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 300px;
+}
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 950px;
+  height: 35px;
+}
+.menu img {
+  width: 13%;
+}
+.menu ul li a {
+  color: black;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  height: 35px;
+}
+
+.login a {
+  font-weight: bold;
+  color: black;
+}
