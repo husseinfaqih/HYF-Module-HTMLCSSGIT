@@ -8,6 +8,16 @@ body {
   background-color: bisque;
 }
 
+/* NAV MENU */
+
+header {
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 14%;
+}
+
 .part_i {
   margin-left: 30px;
   /* background-color: aqua; */
@@ -29,9 +39,6 @@ body {
   /* background-color: rgb(234, 255, 127); */
   padding: 0;
   list-style: none;
-
-  /* display: flex;
-  align-content: center; */
 }
 
 .nav_links li a {
@@ -50,11 +57,6 @@ body {
 }
 
 .nav_login li {
-  /* display: inline-block; */
-  /* margin-right: 100px; */
-  /* display: flex;
-  flex-direction: row;
-  gap: 100px; */
 }
 
 .nav_login li a:hover {
@@ -70,9 +72,6 @@ body {
 }
 
 .icon {
-  /* background-color: chartreuse; */
-  /* float: right; */
-  /* margin-right: 100px; */
 }
 
 .logo {
@@ -80,10 +79,48 @@ body {
   cursor: pointer;
 }
 
-header {
-  background-color: blueviolet;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0px 14%;
+.toggle-button {
+  position: absolute;
+  top: 1.4rem;
+  right: 2.2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15px;
+  height: 15px;
+}
+
+.toggle-button .bar {
+  height: 1.5px;
+  width: 100%;
+
+  background-color: black;
+  border-radius: 10px;
+}
+
+/* LANDING SECTION */
+
+@media (max-width: 400px) {
+  /* NAV MENU */
+  .toggle-button {
+    display: flex;
+  }
+  .nav_links {
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+  .logo {
+    height: 18px;
+    position: relative;
+    right: 20px;
+  }
+  .login a {
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    /* background-color: chartreuse; */
+  }
 }
