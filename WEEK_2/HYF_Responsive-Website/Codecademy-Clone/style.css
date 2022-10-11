@@ -101,41 +101,50 @@ header {
 /* LANDING PAGE */
 
 .landing-page {
-  background-color: aquamarine;
-  padding: 0 200px;
+  margin-top: 50px;
+  /* background-color: aquamarine; */
+  /* padding: 0 200px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
-.landing-page img {
-  width: 400px;
+.landing-page .main-img {
+  margin-left: 250px;
+  width: 500px;
 }
 
 .section-join {
-  /* background-color: blue; */
+  /* background-color: rgb(44, 200, 83); */
   width: 400px;
 }
 
 .section-join h1 {
-  font-size: medium;
+  font-size: 25px;
   text-align: justify;
 }
 .landing-page-icons {
   display: flex;
+  /* justify-content: space-between; */
 }
 
 .landing-page-icons img {
-  width: 25px;
+  background-color: white;
+  width: 50px;
+  border: 0.5px solid black;
+  padding: 15px;
+  margin-right: 10px;
 }
 
 .lading-page-form {
-  width: 200px;
+  /* width: 200px; */
+  display: block;
 }
 
 .lading-page-form label {
   display: block;
-  font-size: 15px;
-  margin-bottom: 5px;
+  font-size: 17px;
+  /* margin-bottom: 5px; */
 }
 
 .lading-page-form input {
@@ -143,10 +152,26 @@ header {
   width: 400px;
   height: 50px;
   border: 0.5px solid black;
-  border-radius: 4px;
+  border-radius: 1px;
 }
-.form-password {
-  margin-top: -10px;
+
+.lading-page-form button {
+  margin-top: 30px;
+  background-color: rgb(72, 0, 255);
+  color: white;
+  height: 30px;
+  border: 0.5px solid rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.terms p {
+  font-size: 14px;
+}
+
+.signup p {
+  font-size: 17px;
+  font-weight: bold;
 }
 
 @media (max-width: 400px) {
