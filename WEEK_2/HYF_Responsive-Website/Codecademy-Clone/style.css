@@ -90,6 +90,11 @@ header {
   height: 15px;
 }
 
+.landing-page button a {
+  text-decoration: none;
+  color: white;
+}
+
 .toggle-button .bar {
   height: 1.5px;
   width: 100%;
@@ -213,6 +218,135 @@ header {
   border: 0.5px solid rgba(0, 0, 0, 0);
   border-radius: 3px;
   font-weight: bold;
+}
+
+.take-a-quiz button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* SECTION 3 */
+
+.stories-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0;
+  margin: 50px 300px 20px 300px;
+}
+
+.stories-title-main h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 45px;
+}
+
+.stories-title-main span {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.stories-title-link a {
+  font-weight: bold;
+  text-decoration: none;
+  color: blue;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.stories-content {
+  /* background-color: #ffd300; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  text-align: justify;
+  margin: 30px 250px;
+  margin-left: 300px;
+}
+
+.stories-content img {
+  width: 200px;
+}
+
+.stories-content h3,
+p {
+  width: 200px;
+}
+
+.stories-content p {
+  margin-top: -20px;
+  font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+}
+
+.footer-part-i {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    'i ii iii'
+    'iv v vi'
+    'iv vi .';
+}
+
+.footer-i {
+  background-color: yellow;
+  width: 100px;
+  height: 300px;
+  grid-area: i;
+}
+.footer-ii {
+  background-color: red;
+  width: 100px;
+  height: 300px;
+  grid-area: ii;
+}
+.footer-iii {
+  background-color: green;
+  width: 100px;
+  height: 300px;
+  grid-area: iii;
+}
+.footer-iv {
+  background-color: blue;
+  width: 100px;
+  height: 300px;
+  grid-area: iv;
+}
+.footer-v {
+  background-color: purple;
+  width: 100px;
+  height: 300px;
+  grid-area: v;
+}
+.footer-vi {
+  background-color: orange;
+  width: 100px;
+  height: 300px;
+  grid-area: vi;
+}
+.footer-vii {
+  background-color: pink;
+  width: 100px;
+  height: 300px;
+  grid-area: vii;
+}
+.footer-viii {
+  background-color: gold;
+  width: 100px;
+  height: 300px;
+  grid-area: viii;
+}
+.footer-ix {
+  background-color: silver;
+  width: 100px;
+  height: 300px;
+  grid-area: ix;
 }
 
 /* MEDIA RESPONSIVE */
