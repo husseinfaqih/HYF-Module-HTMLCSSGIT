@@ -11,7 +11,6 @@ body {
 /* NAV MENU */
 
 header {
-  /* background-color: blueviolet; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -20,11 +19,9 @@ header {
 
 .part_i {
   margin-left: 30px;
-  /* background-color: aqua; */
 }
 .nav_links {
   padding: 0;
-  /* background-color: rgb(234, 255, 127); */
   list-style: none;
 }
 .part_ii {
@@ -32,11 +29,9 @@ header {
   align-items: center;
   margin-left: auto;
   gap: 50px;
-  /* background-color: aqua; */
 }
 .nav_login {
   min-width: 50px;
-  /* background-color: rgb(234, 255, 127); */
   padding: 0;
   list-style: none;
 }
@@ -68,7 +63,6 @@ header {
   color: black;
   font-weight: bold;
   text-decoration: none;
-  /* background-color: chartreuse; */
 }
 
 .icon {
@@ -114,12 +108,11 @@ header {
 }
 
 .landing-page .main-img {
-  margin-left: 225px;
+  margin-left: 200px;
   width: 500px;
 }
 
 .section-join {
-  /* background-color: rgb(44, 200, 83); */
   width: 400px;
 }
 
@@ -129,7 +122,6 @@ header {
 }
 .landing-page-icons {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .landing-page-icons img {
@@ -141,14 +133,12 @@ header {
 }
 
 .lading-page-form {
-  /* width: 200px; */
   display: block;
 }
 
 .lading-page-form label {
   display: block;
   font-size: 17px;
-  /* margin-bottom: 5px; */
 }
 
 .lading-page-form input {
@@ -257,7 +247,6 @@ header {
 }
 
 .stories-content {
-  /* background-color: #ffd300; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
@@ -297,8 +286,6 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
-  /* grid-gap: 20px; */
-  /* grid-auto-rows: minmax(150px, auto); */
   grid-template-areas:
     'i ii iii'
     'iv v vi'
@@ -316,19 +303,16 @@ p {
 
 .footer-part-ii {
   text-align: left;
-  /* text-decoration: none; */
   font-size: 16px;
   width: 45%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
-  /* gap: 0 50px; */
   grid-template-areas:
     'ft1 ft1 ft1'
     'ft2 ft3 ft4';
   margin-left: 20px;
   position: relative;
-  /* left: 50px; */
 }
 
 .footer-part-ii ul {
@@ -398,8 +382,8 @@ p {
   color: black;
 }
 
-/* MEDIA RESPONSIVE */
-@media (max-width: 400px) {
+/* MEDIA RESPONSIVE MOBILE */
+@media (max-width: 480px) {
   /* NAV MENU */
   .toggle-button {
     display: flex;
@@ -420,7 +404,6 @@ p {
     color: black;
     font-weight: bold;
     text-decoration: none;
-    /* background-color: chartreuse; */
   }
 
   /* LANDING PAGE */
@@ -445,7 +428,6 @@ p {
   }
 
   .lading-page-form {
-    /* width: 200px; */
     display: block;
   }
 
@@ -524,10 +506,7 @@ p {
   .footer-info {
     flex-direction: column;
     margin: 50px 0 0 0;
-    /* ///>>>>>>>>>>>>>>>>>>   >>>>>>>>>>>>>>>>>>>>////// */
   }
-
-  /* Individual */ /* ///>>>>>>>>>>>>>>>>>>   >>>>>>>>>>>>>>>>>>>>////// */
 
   .footer-info {
     margin: 0 20px 0 20px;
@@ -577,8 +556,6 @@ p {
     margin-left: 0;
   }
 
-  /* ///>>>>>>>>>>>>>>>>>>   >>>>>>>>>>>>>>>>>>>>////// */
-
   .footer-part-i {
     border-right: none;
     width: 100%;
@@ -593,8 +570,6 @@ p {
       'mb mb';
 
     border-bottom: 1px solid;
-
-    /* ///>>>>>>>>>>>>>>>>>>   >>>>>>>>>>>>>>>>>>>>////// */
   }
 
   .footer-part-ii {
@@ -609,23 +584,179 @@ p {
       'lg C'
       'sb sb';
     width: 100%;
-
-    /* ///>>>>>>>>>>>>>>>>>>   >>>>>>>>>>>>>>>>>>>>////// */
   }
 
   .footer-infoii {
     margin: 20px 0 20px 0;
     text-align: center;
     flex-direction: column;
-
-    /* ///>>>>>>>>>>>>>>>>>>   >>>>>>>>>>>>>>>>>>>>////// */
   }
 
   .footer-infoii span {
     margin-top: 20px;
     padding-bottom: 20px;
+  }
 
-    /* ///>>>>>>>>>>>>>>>>>>   >>>>>>>>>>>>>>>>>>>>////// */
+  .ftbottom {
+    margin-top: 20px;
+  }
+}
+
+/* MEDIA RESPONSIVE TABLET */
+@media (min-width: 480px) and (max-width: 768px) {
+  /* NAV MENU */
+  .toggle-button {
+    display: flex;
+  }
+  .nav_links {
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+  .logo {
+    height: 18px;
+    position: relative;
+    right: 20px;
+  }
+  .login a {
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  /* LANDING PAGE */
+  .landing-page .main-img {
+    margin-left: auto;
+    width: 300px;
+  }
+
+  .section-join {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  .lading-page-form input {
+    width: 300px;
+  }
+
+  /* SECTION 2 */
+
+  .quiz-part-i {
+    margin-left: 20%;
+  }
+
+  .take-a-quiz img {
+    min-width: 10%;
+  }
+
+  /* SECTION 3 */
+
+  .stories-title {
+    margin: 50px 40px 20px 40px;
+  }
+
+  .stories-title-main {
+    width: 450px;
+  }
+
+  .stories-content {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+  }
+
+  .stories-content img {
+    width: 300px;
+  }
+
+  /* FOOTER */
+  .footer-info {
+    flex-direction: column;
+    margin: 50px 0 0 0;
+  }
+
+  .footer-info {
+    margin: 0 20px 0 20px;
+  }
+  .footer-i {
+    grid-area: lg;
+  }
+  .footer-ii {
+    grid-area: rs;
+  }
+  .footer-iii {
+    grid-area: cm;
+  }
+  .footer-iv {
+    grid-area: mb;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .footer-v {
+    grid-area: ip;
+  }
+  .footer-vi {
+    grid-area: ep;
+  }
+  .footer-vii {
+    grid-area: sp;
+  }
+
+  .footer-1 {
+    grid-area: cc;
+  }
+
+  .footer-2 {
+    grid-area: sb;
+  }
+  .footer-3 {
+    grid-area: lg;
+    margin-left: 0;
+  }
+  .footer-4 {
+    grid-area: C;
+    margin-left: 0;
+  }
+
+  .footer-part-i {
+    border-right: none;
+    width: 100%;
+
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+
+    grid-template-areas:
+      'lg rs cm'
+      'mb ip ep  '
+      '.. sp ..';
+
+    border-bottom: 1px solid;
+  }
+
+  .footer-part-ii {
+    margin-left: 0;
+    margin-top: 20px;
+
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+
+    grid-template-areas:
+      'cc cc cc cc'
+      'lg C sb sb';
+    width: 100%;
+  }
+
+  .footer-infoii {
+    margin: 20px 0 20px 0;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer-infoii span {
+    margin-top: 20px;
+    padding-bottom: 20px;
   }
 
   .ftbottom {
